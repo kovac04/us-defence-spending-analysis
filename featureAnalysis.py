@@ -19,13 +19,13 @@ label_encoder = LabelEncoder()
 data['Entity'] = label_encoder.fit_transform(data['Entity'])
 
 # Split the data into features (X) and target variable (y)
-X = data.drop(['Lockheed Martin (Billion USD)', 'General Dynamics (Billion USD)','Country','Year','Unnamed: 0_y','Unnamed: 0_x'], axis=1)
+X = data.drop(['Lockheed Martin (Billion USD)', 'General Dynamics (Billion USD)','Country','Year','Unnamed: 0_y','Unnamed: 0_x','Oil Reserves (Barrels)'], axis=1)
 y = data['Lockheed Martin (Billion USD)']
 
-X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)
 
 # Initialize Random Forest Regressor
-rf_regressor = RandomForestRegressor(n_estimators=100, random_state=42)
+rf_regressor = RandomForestRegressor()
 
 # Train the model
 rf_regressor.fit(X_train, y_train)
