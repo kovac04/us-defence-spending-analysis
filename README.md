@@ -37,7 +37,7 @@ Order of Execution
 
     data.ipynb
     regionMapping.py
-    Analysis files (analysis1.ipynb, analysis2.ipynb, etc.)
+    Analysis files  (featureAnalysis.py, correlationHeatmap.py, etc.) can be run in any order, all seperate outputs
 
 Contributors
 
