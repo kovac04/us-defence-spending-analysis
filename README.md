@@ -1,4 +1,4 @@
-# 353-Project
+# US Defence Spending Analysis
 
 Overview
 
